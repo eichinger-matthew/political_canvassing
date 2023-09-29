@@ -1,17 +1,21 @@
 # political_canvassing
- Algorithm to find how best to assign canvassers to residents to maximize electoral vote shares
+Algorithm to find how best to assign canvassers to residents to maximize electoral vote shares
 
-# repository is split into (1) .R files for running the model, (2) .RData objects with algorithm outcomes, and (3) a .pdf file for the paper. Very raw
+The repository is split into (1) .R files for running the model, (2) .RData objects with algorithm outcomes, and (3) a (very raw) .pdf file for the paper 
 
-# NOTE ABOUT RUNTIME
+# Idea
 
-the 'fast multi-person' assignment method runs pretty quickly - less than a minute on my graphics card, which is a 2070.
-the 'slow single-person' assignment method runs pretty slowly - more than half an hour (maybe an hour?)
+There are plenty of scholarly papers that study how political parties operate canvassing campaigns in the real world. They mostly detail how campaigns choose stratgies, the tactics they use to reach people, and how they attract donations. Strangely, however, there are no scholarly papers that study how political canvassing - an individual part of a broader campaign strategy - should take place, given that a party has information on their constituents and their canvassers. Is this an oversight? Or do parties have a solid heuristic for canvassing that negates the need to build a canvassing algorithm? This projects tests this idea by creating a novel canvassing algorithm and calculating performance diagnostics.
+
+# Note about runtime
+
+The 'fast multi-person' assignment method runs pretty quickly - less than a minute on my graphics card, which is a 2070.
+The 'slow single-person' assignment method runs pretty slowly - more than half an hour (maybe an hour?)
 
 The marginal gains from the fast multi-person method outweight the marginal gains from the slow single-person method, in my opinion. Lets you do more exploration
 
 
-# FILES
+# Files
 
 aside from the master_script_canvassing.R script, the .R files are the individual components of the master script. they do narrow but key parts of the analysis.
 
